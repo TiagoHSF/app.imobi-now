@@ -8,6 +8,7 @@ import { CadastroCompradorComponent } from './cadastro-comprador/cadastro-compra
 import { CadastroVendedorComponent } from './cadastro-vendedor/cadastro-vendedor.component';
 import { FeedCompradorAnunciosComponent } from './feed-comprador-anuncios/feed-comprador-anuncios.component';
 import { FeedVendedorAnunciosComponent } from './feed-vendedor-anuncios/feed-vendedor-anuncios.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FeedVendedorAnunciosComponent } from './feed-vendedor-anuncios/feed-ven
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    routing,
   ],
   providers: [],
   bootstrap: [AppComponent]
