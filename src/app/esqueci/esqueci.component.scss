@@ -11,6 +11,7 @@ html {
   body {
     font-family: "Poppins", sans-serif;
     height: 100vh;
+    background-color: #134f88 !important;
   }
   
   a {
@@ -45,7 +46,7 @@ html {
   }
   
   #formContent {
-    top: 18vh;
+    top: -7vh;
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
     background: #fff;
@@ -306,3 +307,4 @@ html {
     left: 11%;
     z-index: 11;
     }
+
