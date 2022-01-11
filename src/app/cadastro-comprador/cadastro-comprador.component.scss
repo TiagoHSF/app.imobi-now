@@ -1,7 +1,7 @@
 .imobi-title {
     font-size: 50px;
     font-weight: 700;
-    font-family: inherit;
+    font-family: -webkit-pictograph;
 }
 
 html {
@@ -39,7 +39,7 @@ html {
     align-items: center;
     flex-direction: column; 
     justify-content: center;
-    width: 100%;
+    width: 98%;
     min-height: 100%;
     padding: 20px;
   }

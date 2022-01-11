@@ -1,7 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import Swal from 'sweetalert2'
 import { Routes } from '@angular/router';
 
+import Swal from 'sweetalert2'
 import 'sweetalert2/src/sweetalert2.scss'
 
 @Component({
@@ -23,7 +23,7 @@ export class CadastroCompradorComponent implements OnInit {
       icon: 'success',
       title: 'Um email foi enviado para ',
       showConfirmButton: false,
-      timer: 1500
+      timer: 3000
     })
   }
 
