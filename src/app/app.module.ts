@@ -9,6 +9,7 @@ import { CadastroVendedorComponent } from './cadastro-vendedor/cadastro-vendedor
 import { FeedCompradorAnunciosComponent } from './feed-comprador-anuncios/feed-comprador-anuncios.component';
 import { FeedVendedorAnunciosComponent } from './feed-vendedor-anuncios/feed-vendedor-anuncios.component';
 import { routing } from './app.routing';
+import { EsqueciComponent } from './esqueci/esqueci.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { routing } from './app.routing';
     CadastroCompradorComponent,
     CadastroVendedorComponent,
     FeedCompradorAnunciosComponent,
-    FeedVendedorAnunciosComponent
+    FeedVendedorAnunciosComponent,
+    EsqueciComponent
   ],
   imports: [
     BrowserModule,

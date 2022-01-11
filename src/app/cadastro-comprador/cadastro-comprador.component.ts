@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import Swal from 'sweetalert2'
+import { Routes } from '@angular/router';
 
 import 'sweetalert2/src/sweetalert2.scss'
 
@@ -15,14 +16,16 @@ export class CadastroCompradorComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  sentEmail(){
+
+  sentEmail() {
     Swal.fire({
       position: 'top-end',
       icon: 'success',
-      title: 'Um email foi enviado para "$email" contendo as instruções para confirmar seu cadastro!',
+      title: 'Um email foi enviado para ',
       showConfirmButton: false,
       timer: 1500
     })
   }
+
 
 }

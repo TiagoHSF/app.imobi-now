@@ -45,7 +45,7 @@ html {
   }
   
   #formContent {
-    top: 30vh;
+    top: 18vh;
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
     background: #fff;
@@ -129,7 +129,7 @@ html {
     display: inline-block;
     font-size: 16px;
     margin: 5px;
-    width: 85%;
+    width: 80%;
     border: 2px solid #f6f6f6;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -150,7 +150,7 @@ html {
     display: inline-block;
     font-size: 16px;
     margin: 5px;
-    width: 85%;
+    width: 80%;
     border: 2px solid #f6f6f6;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -291,4 +291,25 @@ html {
   #icon {
     width:60%;
   }
-  
+
+  .icon-key {
+    position: absolute;
+    top: 58%;
+    left: 11%;
+    z-index: 11;
+  }
+
+  .icon-key2 {
+    position: absolute;
+    top: 68%;
+    left: 11%;
+    z-index: 11;
+  }
+
+  .icon-email {
+  position: absolute;
+  font-size: 19px;
+  top: 23.5%;
+  left: 11%;
+  z-index: 11;
+  }

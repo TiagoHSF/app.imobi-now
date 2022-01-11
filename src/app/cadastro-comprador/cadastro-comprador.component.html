@@ -6,10 +6,16 @@
       </div>
 
       <form>
+          <div class="form-group">
         <input type="text" id="login" class="fadeIn second" name="login" placeholder="Insira seu usuário">
-        <input style="margin-top: 25px !important;" type="password" id="password" class="fadeIn third" name="login" placeholder="Insira uma senha">
-        <input type="password" id="password" class="fadeIn third" name="login" placeholder="Confirme a senha digitada">
-        <input onclick="sentEmail()" type="submit" class="fadeIn fourth" value="Cadastrar">
+        <label for="email"></label>
+        <i class="fa fa-envelope icon-email fadeIn second" aria-hidden="true"></i><input type="text" id="email" name="email" class="fadeIn second" placeholder="Insira seu email"/>
+        <input type="text" id="cpf" class="fadeIn second" name="cpf" placeholder="Insira seu CPF ou CNPJ"/>
+        <input type="text" id="number" class="fadeIn second" name="cpf" placeholder="Insira seu número de telefone"/>
+        <i class="fa fa-key icon-key fadeIn third" aria-hidden="true"></i><input style="margin-top: 25px !important;" type="password" id="password-main" class="fadeIn third" name="login-main" placeholder="Insira uma senha"/>
+        <i class="fa fa-key icon-key2 fadeIn third" aria-hidden="true"></i><input type="password" id="password-confirm" class="fadeIn third" name="password-confirm" placeholder="Confirme a senha digitada"/>
+        <i class="fa fa-floppy-o" aria-hidden="true"></i><input (click)="sentEmail()" type="button" class="fadeIn fourth" value="Cadastrar"/>
+        </div>
       </form>
 
       <div id="formFooter">
