@@ -45,5 +45,30 @@
         <a class="dropdown-item" (click)="setSelecionado('terreno')">Terrenos</a>
       </div>
     </div>
+    <div class="btn-group define-btn2">
+      <button type="button" class="btn btn-danger">{{this.pagamento}}</button>
+      <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" (click)="setSelecionadoPagamento('vista')">Á vista</a>
+        <a class="dropdown-item" (click)="setSelecionadoPagamento('parcelado')">Parcelado</a>
+      </div>
+    </div>
+    <div class="btn-group define-btn3">
+      <button type="button" class="btn btn-danger">{{this.faixaDePreco}}</button>
+      <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" (click)="setSelecionadoFaixa('abaixo')">Abaixo de R$30.000,00</a>
+        <a class="dropdown-item" (click)="setSelecionadoFaixa('30')">R$ 30.000,00 - R$60.000,00</a>
+        <a class="dropdown-item" (click)="setSelecionadoFaixa('60')">R$ 60.000,00 - R$90.000,00</a>
+        <a class="dropdown-item" (click)="setSelecionadoFaixa('90')">R$ 90.000,00 - R$120.000,00</a>
+        <a class="dropdown-item" (click)="setSelecionadoFaixa('120')">R$ 120.000,00 - R$150.000,00</a>
+        <a class="dropdown-item" (click)="setSelecionadoFaixa('acima')">Acima de R$150.000,00</a>
+        <a class="dropdown-item" (click)="setSelecionadoFaixa('personalizado')">Personalizado</a>
+      </div>
+    </div>
   </div>
 </div>

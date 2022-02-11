@@ -8,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class FeedCompradorAnunciosComponent implements OnInit {
   tipo: String;
   title: String;
+  pagamento: String;
+  faixaDePreco: String;
 
   constructor() {
     this.tipo = "Tipo";
     this.title = 'SELECIONE UM TIPO'
+    this.pagamento = 'Quota'
+    this.faixaDePreco = 'Faixa de preço'
   }
 
   ngOnInit(): void {
@@ -27,6 +31,34 @@ export class FeedCompradorAnunciosComponent implements OnInit {
     } if(event === 'terreno') {
       this.tipo = 'Terrenos'
       this.title = 'TERRENOS'
+    } else {
+      return;
+    }
+  }
+
+  setSelecionadoPagamento(event: string){
+    if(event === 'vista'){
+      this.pagamento = 'Á vista'
+    } if(event === 'parcelado'){
+      this.pagamento = 'Parcelado'
+    } else {
+      return;
+    }
+  }
+
+  setSelecionadoFaixa(event: string){
+    if(event === 'abaixo'){
+      this.faixaDePreco = 'Abaixo de R$30.000,00'
+    } if(event === '30'){
+      this.faixaDePreco = 'R$ 30.000,00 - R$60.000,00'
+    } if(event === '60'){
+      this.faixaDePreco = 'R$ 60.000,00 - R$90.000,00'
+    } if(event === '90'){
+      this.faixaDePreco = 'R$ 90.000,00 - R$120.000,00'
+    } if(event === '120'){
+      this.faixaDePreco = 'R$ 120.000,00 - R$150.000,00'
+    } if(event === 'acima'){
+      this.faixaDePreco = 'Acima de R$150.000,00'
     }
   }
 
