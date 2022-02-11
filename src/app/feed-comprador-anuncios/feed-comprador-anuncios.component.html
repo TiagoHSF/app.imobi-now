@@ -29,7 +29,21 @@
 </body>
 
 <div>
-  <div class="title-base">
+  <div class="title-base margem">
   O QUE PROCURA?
+  </div>
+  <div class="margem2 title-base2">
+    <span class="title-base3">{{this.title}}</span>
+    <div class="btn-group define-btn">
+      <button type="button" class="btn btn-danger">{{this.tipo}}</button>
+      <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" (click)="setSelecionado('casa')">Casas</a>
+        <a class="dropdown-item" (click)="setSelecionado('apartamento')">Apartamentos</a>
+        <a class="dropdown-item" (click)="setSelecionado('terreno')">Terrenos</a>
+      </div>
+    </div>
   </div>
 </div>

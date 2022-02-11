@@ -14,9 +14,9 @@ export class EsqueciComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  sentCode(){
+  sentCode(email: string){
     Swal.fire({
-      title: "Código enviado a $EMAIL!",
+      title: "Código enviado a " + email,
       text: 'Insira o código abaixo!',
       icon: 'success',
       input: 'text',
