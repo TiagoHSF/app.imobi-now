@@ -28,6 +28,9 @@
   </nav>
 </body>
 
+<i *ngIf="this.clear === false" (click)="clearFiltros()" class="fas fa-sync spin-animated"></i>
+<i *ngIf="this.clear === true" class="fas fa-sync fa-spin spin-animated"></i>
+
 <div>
   <div class="title-base margem">
   O QUE PROCURA?
@@ -100,12 +103,12 @@
       <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="sr-only">Toggle Dropdown</span>
       </button>
-      <div *ngIf="this.localizacaoEstado === 'Minas Gerais' && this.localizacaoEstado != 'São Paulo'" class="dropdown-menu">
+      <div *ngIf="this.localizacaoEstado === 'Minas Gerais'" class="dropdown-menu">
         <a class="dropdown-item" (click)="setSelecionadoLocalizacaoCidade('Itajubá')">Itajubá</a>
         <a class="dropdown-item" (click)="setSelecionadoLocalizacaoCidade('Piranguinho')">Piranguinho</a>
         <a class="dropdown-item" (click)="setSelecionadoLocalizacaoCidade('Delfim Moreira')">Delfim Moreira</a>
       </div>
-      <div *ngIf="this.localizacaoEstado === 'São Paulo' && this.localizacaoEstado != 'Minas Gerais'" class="dropdown-menu">
+      <div *ngIf="this.localizacaoEstado === 'São Paulo'" class="dropdown-menu">
         <a class="dropdown-item" (click)="setSelecionadoLocalizacaoCidade('Campinas')">Campinas</a>
         <a class="dropdown-item" (click)="setSelecionadoLocalizacaoCidade('Santos')">Santos</a>
       </div>
