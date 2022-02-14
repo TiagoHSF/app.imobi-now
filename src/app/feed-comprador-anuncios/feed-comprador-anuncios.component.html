@@ -35,6 +35,7 @@
   <div class="margem2 title-base2">
     <span class="title-base3">{{this.title}}</span>
     <div class="btn-group define-btn">
+      <span class="main-titles-tipo">TIPO DO IMÓVEL</span>
       <button type="button" class="btn btn-danger">{{this.tipo}}</button>
       <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="sr-only">Toggle Dropdown</span>
@@ -46,6 +47,7 @@
       </div>
     </div>
     <div class="btn-group define-btn2">
+      <span class="main-titles-quota">QUOTA</span>
       <button type="button" class="btn btn-danger">{{this.pagamento}}</button>
       <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="sr-only">Toggle Dropdown</span>
@@ -56,6 +58,7 @@
       </div>
     </div>
     <div class="btn-group define-btn3">
+      <span class="main-titles-faixa">FAIXA DE PREÇO</span>
       <button type="button" class="btn btn-danger">{{this.faixaDePreco}}</button>
       <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="sr-only">Toggle Dropdown</span>
@@ -70,5 +73,44 @@
         <a class="dropdown-item" (click)="setSelecionadoFaixa('personalizado')">Personalizado</a>
       </div>
     </div>
+    <div class="btn-group define-btn4 alinhabtn4">
+      <span class="main-titles-localizacao">LOCALIZAÇÃO</span>
+      <button type="button" class="btn btn-danger">{{this.localizacao}}</button>
+      <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" (click)="setSelecionadoLocalizacao('Brasil')">Brasil</a>
+      </div>
+    </div>
+
+    <div *ngIf="this.localizacao != 'País'" class="btn-group define-btn4 alinhabtn5">
+      <button type="button" class="btn btn-danger">{{this.localizacaoEstado}}</button>
+      <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" (click)="setSelecionadoLocalizacaoEstado('Minas Gerais')">Minas Gerais</a>
+        <a class="dropdown-item" (click)="setSelecionadoLocalizacaoEstado('São Paulo')">São Paulo</a>
+      </div>
+    </div>
+
+    <div *ngIf="this.localizacaoEstado != 'Estado'" class="btn-group define-btn4 alinhabtn6">
+      <button type="button" class="btn btn-danger">{{this.localizacaoCidade}}</button>
+      <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div *ngIf="this.localizacaoEstado === 'Minas Gerais' && this.localizacaoEstado != 'São Paulo'" class="dropdown-menu">
+        <a class="dropdown-item" (click)="setSelecionadoLocalizacaoCidade('Itajubá')">Itajubá</a>
+        <a class="dropdown-item" (click)="setSelecionadoLocalizacaoCidade('Piranguinho')">Piranguinho</a>
+        <a class="dropdown-item" (click)="setSelecionadoLocalizacaoCidade('Delfim Moreira')">Delfim Moreira</a>
+      </div>
+      <div *ngIf="this.localizacaoEstado === 'São Paulo' && this.localizacaoEstado != 'Minas Gerais'" class="dropdown-menu">
+        <a class="dropdown-item" (click)="setSelecionadoLocalizacaoCidade('Campinas')">Campinas</a>
+        <a class="dropdown-item" (click)="setSelecionadoLocalizacaoCidade('Santos')">Santos</a>
+      </div>
+    </div>
+
+
   </div>
 </div>

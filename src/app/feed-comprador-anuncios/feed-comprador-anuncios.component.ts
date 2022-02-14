@@ -10,12 +10,18 @@ export class FeedCompradorAnunciosComponent implements OnInit {
   title: String;
   pagamento: String;
   faixaDePreco: String;
+  localizacao: String;
+  localizacaoEstado: String;
+  localizacaoCidade: String;
 
   constructor() {
     this.tipo = "Tipo";
     this.title = 'SELECIONE UM TIPO'
     this.pagamento = 'Quota'
     this.faixaDePreco = 'Faixa de preço'
+    this.localizacao = 'País'
+    this.localizacaoEstado = "Estado"
+    this.localizacaoCidade = "Cidade"
   }
 
   ngOnInit(): void {
@@ -59,6 +65,39 @@ export class FeedCompradorAnunciosComponent implements OnInit {
       this.faixaDePreco = 'R$ 120.000,00 - R$150.000,00'
     } if(event === 'acima'){
       this.faixaDePreco = 'Acima de R$150.000,00'
+    }
+  }
+
+  setSelecionadoLocalizacao(event: string){
+    if(event === 'Brasil'){
+      this.localizacao = 'Brasil'
+    }
+  }
+
+  setSelecionadoLocalizacaoEstado(event: string){
+    if(event === 'Minas Gerais'){
+      this.localizacaoEstado = 'Minas Gerais'
+    }
+    if(event === 'São Paulo'){
+      this.localizacaoEstado = 'São Paulo'
+    }
+  }
+
+  setSelecionadoLocalizacaoCidade(event: string){
+    if(event === 'Itajubá'){
+      this.localizacaoCidade = 'Itajubá'
+    }
+    if(event === 'Piranguinho'){
+      this.localizacaoCidade = 'Piranguinho'
+    }
+    if(event === 'Delfim Moreira'){
+      this.localizacaoCidade = 'Delfim Moreira'
+    }
+    if(event === 'Campinas'){
+      this.localizacaoCidade = 'Campinas'
+    }
+    if(event === 'Santos'){
+      this.localizacaoCidade = 'Santos'
     }
   }
 
