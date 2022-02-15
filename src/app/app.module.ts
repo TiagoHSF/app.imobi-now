@@ -10,6 +10,8 @@ import { FeedCompradorAnunciosComponent } from './feed-comprador-anuncios/feed-c
 import { FeedVendedorAnunciosComponent } from './feed-vendedor-anuncios/feed-vendedor-anuncios.component';
 import { routing } from './app.routing';
 import { EsqueciComponent } from './esqueci/esqueci.component';
+import { MeuPerfilComponent } from './meu-perfil/meu-perfil.component';
+import { CadastroAnuncioComponent } from './cadastro-anuncio/cadastro-anuncio.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { EsqueciComponent } from './esqueci/esqueci.component';
     CadastroVendedorComponent,
     FeedCompradorAnunciosComponent,
     FeedVendedorAnunciosComponent,
-    EsqueciComponent
+    EsqueciComponent,
+    MeuPerfilComponent,
+    CadastroAnuncioComponent
   ],
   imports: [
     BrowserModule,

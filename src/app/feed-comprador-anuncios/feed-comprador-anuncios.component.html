@@ -1,45 +1,49 @@
-<body style="background-color: #ffff !important;">
+<body style="background-color: #e2e3e1 !important;">
     <app-root></app-root>
 
+  <!-- <img src="assets/Logo-projeto.png"> -->
 <nav class="navbar background-nav navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand title" href="#">IMOBI</a>
+        <!-- <a class="navbar-brand title" href="#">IMOBI</a> -->
+        <img class="alinha-img-top" src="assets/64x64.png">
       </div>
       <div class="navbar-header">
-        <a class="navbar-brand short-title" href="#">Início</a>
+        <a class="navbar-brand short-title" href="">Íncio</a>
       </div>
       <div class="navbar-header">
-        <a class="navbar-brand short-title" href="#">Busca de Imóveis</a>
+        <a class="navbar-brand short-title" href="feed-comp-ads">Busca de Imóveis</a>
       </div>
       <div class="navbar-header">
         <a class="navbar-brand short-title" href="#">Quem somos?</a>
       </div>
 
-          <a class="navbar-brand short-title" data-toggle="dropdown" href="#">Meu perfil
+          <a class="navbar-brand short-title" data-toggle="dropdown" href="#"><i class='fa fa-user' style="font-size: 2rem"></i> Meu perfil
           <!--Code to show caret sign-->
           <span class="caret"></span></a>
           <!--here goes your list-->
           <ul class="dropdown-menu dropdow short-title">
-            <li><a href="#">Perfil</a></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="meu-perfil">Perfil</a></li>
+            <li><a href="#"><i class='fa fa-sign-out'></i>Logout</a></li>
           </ul>
     </div>
   </nav>
 </body>
 
-<i *ngIf="this.clear === false" (click)="clearFiltros()" class="fas fa-sync spin-animated"></i>
+<button *ngIf="this.filtrando === true" class="filter" (click)="setNaoFiltrando()"><i class='fa fa-filter'></i>ALTERAR FILTROS</button>
+<div *ngIf="this.filtrando === false" class="fadeIn first">
+<i *ngIf="this.clear === false" title="Limpar Filtros" (click)="clearFiltros()" class="fas fa-sync spin-animated"></i>
 <i *ngIf="this.clear === true" class="fas fa-sync fa-spin spin-animated"></i>
 
-<div>
+<img class="alinha-img-centro fadeIn second" src="assets/Logo-projeto.png">
   <div class="title-base margem">
-  O QUE PROCURA?
+  O IMÓVEL PERFEITO PRA VOCÊ!
   </div>
-  <div class="margem2 title-base2">
+  <div class="margem2 title-base2 fadeIn first">
     <span class="title-base3">{{this.title}}</span>
     <div class="btn-group define-btn">
       <span class="main-titles-tipo">TIPO DO IMÓVEL</span>
-      <button type="button" class="btn btn-danger"><i class='fa fa-home'></i>{{this.tipo}}</button>
+      <button type="button" class="btn btn-danger"><i class='fa fa-home'></i> {{this.tipo}}</button>
       <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="sr-only">Toggle Dropdown</span>
       </button>
@@ -51,7 +55,7 @@
     </div>
     <div class="btn-group define-btn2">
       <span class="main-titles-quota">QUOTA</span>
-      <button type="button" class="btn btn-danger"><i class='fa fa-dollar'></i>{{this.pagamento}}</button>
+      <button type="button" class="btn btn-danger"><i class='fa fa-dollar'></i> {{this.pagamento}}</button>
       <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="sr-only">Toggle Dropdown</span>
       </button>
@@ -62,7 +66,7 @@
     </div>
     <div class="btn-group define-btn3">
       <span class="main-titles-faixa">FAIXA DE PREÇO</span>
-      <button type="button" class="btn btn-danger"><i class='fas fa-funnel-dollar'></i>{{this.faixaDePreco}}</button>
+      <button type="button" class="btn btn-danger"><i class='fas fa-funnel-dollar'></i> {{this.faixaDePreco}}</button>
       <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="sr-only">Toggle Dropdown</span>
       </button>
@@ -78,7 +82,7 @@
     </div>
     <div class="btn-group define-btn4 alinhabtn4">
       <span class="main-titles-localizacao">LOCALIZAÇÃO</span>
-      <button type="button" class="btn btn-danger"><i class='fa-solid fa-map-location-dot'></i>{{this.localizacao}}</button>
+      <button type="button" class="btn btn-danger"><i class='fa fa-globe'></i> {{this.localizacao}}</button>
       <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="sr-only">Toggle Dropdown</span>
       </button>
@@ -113,7 +117,8 @@
         <a class="dropdown-item" (click)="setSelecionadoLocalizacaoCidade('Santos')">Santos</a>
       </div>
     </div>
-
-
+    <button class="filtrar" (click)="filtroAtivo('filtrando')"><i class='fa fa-filter'></i> FILTRAR</button>
+    <span class="anuncie-text">É um corretor? Deseja colocar um imóvel a venda?</span>
+    <button class="anuncie" href=""><i class='fa fa-plus'></i> ANUNCIE</button>
   </div>
 </div>

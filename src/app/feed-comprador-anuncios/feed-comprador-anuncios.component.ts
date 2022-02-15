@@ -14,6 +14,7 @@ export class FeedCompradorAnunciosComponent implements OnInit {
   localizacaoEstado: String;
   localizacaoCidade: String;
   clear: Boolean;
+  filtrando: Boolean;
 
   constructor() {
     this.tipo = "Tipo";
@@ -24,6 +25,7 @@ export class FeedCompradorAnunciosComponent implements OnInit {
     this.localizacaoEstado = "Estado"
     this.localizacaoCidade = "Cidade"
     this.clear = false;
+    this.filtrando = false;
   }
 
   ngOnInit(): void {
@@ -105,6 +107,7 @@ export class FeedCompradorAnunciosComponent implements OnInit {
 
    clearFiltros(){
     this.clear = true;
+    this.tipo = 'Tipo'
     this.title = 'SELECIONE UM TIPO'
     this.pagamento = 'Quota'
     this.faixaDePreco = 'Faixa de preço'
@@ -112,6 +115,23 @@ export class FeedCompradorAnunciosComponent implements OnInit {
     this.localizacaoEstado = "Estado"
     this.localizacaoCidade = "Cidade"
     this.clear = false;
+  }
+
+  filtroAtivo(event: String){
+    if(event === 'filtrando'){
+      this.filtrando = true;
+    }
+  }
+
+  setNaoFiltrando(){
+    this.filtrando = false;
+    this.tipo = 'Tipo'
+    this.title = 'SELECIONE UM TIPO'
+    this.pagamento = 'Quota'
+    this.faixaDePreco = 'Faixa de preço'
+    this.localizacao = 'País'
+    this.localizacaoEstado = "Estado"
+    this.localizacaoCidade = "Cidade"
   }
 }
 
