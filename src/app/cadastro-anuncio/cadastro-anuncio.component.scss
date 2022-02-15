@@ -1,0 +1,75 @@
+.background-nav {
+  background: #134f88;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.short-title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+hover::short-title {
+  color: rgb(105, 103, 212);
+}
+
+body {
+  background: #ffff !important;
+}
+
+.dropdow {
+  background: rgba(0, 0, 0, 0) !important;
+  border-style: none !important;
+  left: 137rem !important;
+  justify-content: space-between;
+  top: 6rem !important;
+  text-align-last: center;
+}
+
+.title-base {
+  text-align: center;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 700;
+  right: 43rem;
+  top: 9rem;
+}
+
+.title-base2 {
+  text-align: center;
+  position: absolute;
+  font-size: 23px;
+  font-weight: 600;
+  right: 20%;
+  top: 19%;
+}
+
+.title-base3 {
+  text-align: center;
+  position: absolute;
+  font-size: 3rem;
+  font-weight: 700;
+  right: 29rem;
+  top: 0rem;
+}
+
+.margem {
+  background: #84bae7;
+  border-radius: 17px;
+  color: #fff;
+  padding: 10px;
+  width: 63rem;
+}
+
+.margem2 {
+  background: linear-gradient(3deg, #95cdfd, #95cdfd, #95cdfd2b);
+  border-radius: 17px;
+  color: #2196f5;
+  padding: 100px;
+  width: 60%;
+}

@@ -133,5 +133,9 @@ export class FeedCompradorAnunciosComponent implements OnInit {
     this.localizacaoEstado = "Estado"
     this.localizacaoCidade = "Cidade"
   }
+
+  navigateAnuncio(){
+    window.location.replace('cadastro-anuncio')
+  }
 }
 

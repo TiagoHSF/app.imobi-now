@@ -8,6 +8,7 @@ import { FeedVendedorAnunciosComponent } from './feed-vendedor-anuncios/feed-ven
 import { LoginComponent } from './login/login.component';
 import { EsqueciComponent } from './esqueci/esqueci.component';
 import { MeuPerfilComponent } from './meu-perfil/meu-perfil.component';
+import { CadastroAnuncioComponent } from './cadastro-anuncio/cadastro-anuncio.component';
 
 
 const app_routes: Routes = [
@@ -17,6 +18,7 @@ const app_routes: Routes = [
     { path: 'feed-vend-cads', component: FeedVendedorAnunciosComponent},
     { path: 'esqueci', component: EsqueciComponent},
     { path: 'meu-perfil', component: MeuPerfilComponent},
+    { path: 'cadastro-anuncio', component: CadastroAnuncioComponent},
     { path: '', component: LoginComponent}
 ];
 
