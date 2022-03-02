@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2'
+import 'sweetalert2/src/sweetalert2.scss'
 
 @Component({
   selector: 'app-cadastro-anuncio',
@@ -12,4 +14,11 @@ export class CadastroAnuncioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ativacaoSelo(){
+
+  }
+
+  ativacaoAnuncio(){
+
+  }
 }

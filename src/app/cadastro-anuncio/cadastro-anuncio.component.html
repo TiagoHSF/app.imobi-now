@@ -67,22 +67,20 @@
 <div class="quota">
   <div class="btn-group define-btn">
       <span class="main-titles-tipo">QUOTA</span>
-      <button type="button" class="btn btn-danger"><i class='fa fa-home'></i></button>
+      <button type="button" class="btn btn-danger"><i class='fa fa-dollar'></i></button>
       <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="sr-only">Toggle Dropdown</span>
       </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item">Casas</a>
-      <a class="dropdown-item">Apartamentos</a>
-      <a class="dropdown-item">Terrenos</a>
-      <a class="dropdown-item">Ponto Comercial</a>
+      <a class="dropdown-item">Á vista</a>
+      <a class="dropdown-item">Parcelado</a>
     </div>
   </div>
 </div>
 
 <div class="selo">
   <div class="custom-control custom-switch">
-    <input type="checkbox" class="custom-control-input" id="customSwitches">
+    <input (click)="ativacaoSelo()" type="checkbox" class="custom-control-input" id="customSwitches">
     <label class="custom-control-label" for="customSwitches">DESEJA SOLICITAR SELO IMOBI?</label>
     <a href="" style="font-size: 18px; display: block;">O que é o selo Imobi?</a>
   </div>
@@ -90,7 +88,7 @@
 
 <div class="anuncio">
   <div class="custom-control custom-switch">
-    <input type="checkbox" class="custom-control-input" id="customSwitches">
+    <input (click)="ativacaoAnuncio()" type="checkbox" class="custom-control-input" id="customSwitches">
     <label class="custom-control-label" for="customSwitches">DESEJA SOLICITAR ANÚNCIO PAGO?</label>
     <a href="" style="font-size: 18px; display: block;">O que é anúncio pago?</a>
   </div>
