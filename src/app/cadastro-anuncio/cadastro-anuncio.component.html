@@ -53,15 +53,15 @@
   <div class="tipo">
     <div class="btn-group define-btn">
         <span class="main-titles-tipo">TIPO DO IMÓVEL</span>
-        <button type="button" class="btn btn-danger"><i class='fa fa-home'></i></button>
+        <button type="button" class="btn btn-danger"><i class='fa fa-home'></i>{{this.tipo}}</button>
         <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span class="sr-only">Toggle Dropdown</span>
         </button>
       <div class="dropdown-menu">
-        <a class="dropdown-item">Casas</a>
-        <a class="dropdown-item">Apartamentos</a>
-        <a class="dropdown-item">Terrenos</a>
-        <a class="dropdown-item">Ponto Comercial</a>
+        <a class="dropdown-item" (click)="setTipoImovel('casa')">Casas</a>
+        <a class="dropdown-item" (click)="setTipoImovel('apartamento')">Apartamentos</a>
+        <a class="dropdown-item" (click)="setTipoImovel('terreno')">Terrenos</a>
+        <a class="dropdown-item" (click)="setTipoImovel('ponto')">Ponto Comercial</a>
       </div>
     </div>
 </div>
@@ -69,13 +69,13 @@
 <div class="quota">
   <div class="btn-group define-btn">
       <span class="main-titles-tipo">QUOTA</span>
-      <button type="button" class="btn btn-danger"><i class='fa fa-dollar'></i></button>
+      <button type="button" class="btn btn-danger"><i class='fa fa-dollar'></i>{{this.quota}}</button>
       <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <span class="sr-only">Toggle Dropdown</span>
       </button>
     <div class="dropdown-menu">
-      <a class="dropdown-item">Á vista</a>
-      <a class="dropdown-item">Parcelado</a>
+      <a class="dropdown-item" (click)="setQuota('vista')">Á vista</a>
+      <a class="dropdown-item" (click)="setQuota('parcelado')">Parcelado</a>
     </div>
   </div>
 </div>
