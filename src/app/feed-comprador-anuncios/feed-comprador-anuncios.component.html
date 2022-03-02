@@ -36,10 +36,13 @@
 <i *ngIf="this.clear === true" class="fas fa-sync fa-spin spin-animated"></i>
 
 <img class="alinha-img-centro fadeIn second" src="assets/Logo-projeto.png">
+<div style="display: flex">
   <div class="title-base margem">
   O IMÓVEL PERFEITO PRA VOCÊ!
   </div>
-  <div class="margem2 title-base2 fadeIn first">
+</div>
+<div class="padroniza-all">
+  <div class="margem2 title-base2 fadeIn first" style="display: block">
     <span class="title-base3">{{this.title}}</span>
     <div class="btn-group define-btn">
       <span class="main-titles-tipo">TIPO DO IMÓVEL</span>
@@ -51,6 +54,7 @@
         <a class="dropdown-item" (click)="setSelecionado('casa')">Casas</a>
         <a class="dropdown-item" (click)="setSelecionado('apartamento')">Apartamentos</a>
         <a class="dropdown-item" (click)="setSelecionado('terreno')">Terrenos</a>
+        <a class="dropdown-item" (click)="setSelecionado('ponto-comercial')">Ponto Comercial</a>
       </div>
     </div>
     <div class="btn-group define-btn2">
@@ -122,3 +126,5 @@
     <button class="anuncie" (click)="navigateAnuncio()"><i class='fa fa-plus'></i> ANUNCIE</button>
   </div>
 </div>
+</div>
+

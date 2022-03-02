@@ -41,6 +41,9 @@ export class FeedCompradorAnunciosComponent implements OnInit {
     } if(event === 'terreno') {
       this.tipo = 'Terrenos'
       this.title = 'TERRENOS'
+    } if(event === 'ponto-comercial'){
+      this.tipo = 'Ponto Comercial'
+      this.title = 'PONTO COMERCIAL'
     } else {
       return;
     }
