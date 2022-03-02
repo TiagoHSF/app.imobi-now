@@ -324,7 +324,7 @@ button:hover {
   outline: none;
 }
 
-.email {
+.titulo {
   top: 4rem !important;
   position: relative !important;
   width: 33rem !important;
@@ -382,4 +382,46 @@ input[placeholder="DESCRIÇÃO"]:hover {
   position: relative !important;
   width: 28rem !important;
   right: -29rem;
+}
+
+.item1 {
+  margin-left: 1rem;
+  position: relative;
+  background: #ffffff;
+  color: #3da3f7;
+  font-weight: bold;
+  border-radius: 1rem;
+  border: white;
+  display: inline;
+  text-align: center;
+  width: 10rem;
+  right: -16rem;
+}
+
+.item2 {
+  margin-left: 1rem;
+  position: relative;
+  background: #ffffff;
+  color: #3da3f7;
+  font-weight: bold;
+  border-radius: 1rem;
+  border: white;
+  display: inline;
+  text-align: center;
+  width: 10rem;
+  top: 5rem;
+  right: -16rem;
+}
+
+.anuncie {
+  border-radius: 1rem;
+  position: relative;
+  font-weight: 600;
+  left: 31rem;
+  top: 11rem;
+  width: 13rem;
+  background: #9fd2fd00;
+  color: #2196f3;
+  background-color: transparent;
+  border-color: #2196f3;
 }
