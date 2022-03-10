@@ -425,3 +425,12 @@ input[placeholder="DESCRIÇÃO"]:hover {
   background-color: transparent;
   border-color: #2196f3;
 }
+
+ul {
+  background: #95cdfd !important;
+  border-radius: 6px;
+  width: 5rem !important;
+  height: 6rem;
+  text-align: center;
+  display: list-item;
+}
