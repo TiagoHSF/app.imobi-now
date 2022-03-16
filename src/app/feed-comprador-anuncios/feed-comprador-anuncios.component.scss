@@ -1,5 +1,5 @@
 .background-nav {
-  background: #134f88;
+  background: #606a72;
 }
 
 .title {
@@ -33,20 +33,20 @@ body {
 
 .title-base {
   text-align: center;
-  position: absolute;
+  position: relative;
   font-size: 30px;
   font-weight: 700;
-  right: 43rem;
-  top: 9rem;
+  right: -45rem;
+  top: 2rem;
 }
 
 .title-base2 {
   text-align: center;
-  position: absolute;
+  position: relative;
   font-size: 23px;
   font-weight: 600;
-  right: 20%;
-  top: 19%;
+  right: -30rem;
+  top: 3rem;
 }
 
 .title-base3 {
@@ -59,7 +59,7 @@ body {
 }
 
 .margem {
-  background: #84bae7;
+  background: #606a72;
   border-radius: 17px;
   color: #fff;
   padding: 10px;
@@ -67,9 +67,15 @@ body {
 }
 
 .margem2 {
-  background: linear-gradient(3deg, #95cdfd, #95cdfd, #95cdfd2b);
+  box-shadow: -1.2px -1.1px 38.3px rgba(0, 0, 0, 0.028),
+    2.1px 2px 73.8px rgba(0, 0, 0, 0.04),
+    12.1px 11.4px 107.4px rgba(0, 0, 0, 0.05),
+    33.8px 31.7px 140.8px rgba(0, 0, 0, 0.06),
+    72.9px 68.4px 178.5px rgba(0, 0, 0, 0.072),
+    97px 91px 242px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, #ffffff, #ffffff, transparent) !important;
   border-radius: 17px;
-  color: #2196f5;
+  color: #5e676f;
   padding: 100px;
   width: 60%;
 }
@@ -345,6 +351,6 @@ button:hover {
   width: 6rem;
 }
 
-.padroniza-all{
+.padroniza-all {
   display: inline;
 }
