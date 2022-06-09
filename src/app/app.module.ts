@@ -11,6 +11,9 @@ import { EsqueciComponent } from './externo/esqueci-senha/esqueci.component';
 import { MeuPerfilComponent } from './interno/meu-perfil/meu-perfil.component';
 import { CadastroAnuncioComponent } from './interno/cadastro-anuncio/cadastro-anuncio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MeuPerfilComponent,
     CadastroAnuncioComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, routing, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    routing,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatFormFieldModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

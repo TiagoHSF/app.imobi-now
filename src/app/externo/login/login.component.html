@@ -1,5 +1,19 @@
-<!-- <body style="background: linear-gradient(44deg, #dee0e3, #bd9e93, transparent) !important;"> -->
-<body
+<mat-card class="center">
+  <mat-card class="center-mat-card shadow">
+    <img class="alinha-img-top" src="assets/128x128-preto.png" />
+    <mat-card-subtitle>Start</mat-card-subtitle>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Outline form field</mat-label>
+        <input matInput placeholder="Placeholder" />
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>Hint</mat-hint>
+      </mat-form-field>
+    </p>
+  </mat-card>
+</mat-card>
+
+<!-- <body
   style="
     background: linear-gradient(
       145deg,
@@ -8,27 +22,47 @@
       transparent
     ) !important;
   "
-></body>
-
-<!--
-<div class="wrapper fadeInDown">
+>
+  <div class="wrapper fadeInDown">
     <div id="formContent">
-
       <div class="fadeIn first">
-        <img class="alinha-img-top" src="assets/128x128-preto.png">
+        <img class="alinha-img-top" src="assets/128x128-preto.png" />
       </div>
 
       <form>
-        <i class="fa fa-envelope icon-email fadeIn second" aria-hidden="true"></i><input type="text" id="login" class="fadeIn second" name="login" placeholder="Email">
-        <i class="fa fa-key icon-key fadeIn third" aria-hidden="true"></i><input type="password" id="password" class="fadeIn third" name="login" placeholder="Senha">
-        <input (click)="navigate()" type="button" class="fadeIn fourth" value="Log In">
+        <i
+          class="fa fa-envelope icon-email fadeIn second"
+          aria-hidden="true"
+        ></i
+        ><input
+          type="text"
+          id="login"
+          class="fadeIn second"
+          name="login"
+          placeholder="Email"
+        />
+        <i class="fa fa-key icon-key fadeIn third" aria-hidden="true"></i
+        ><input
+          type="password"
+          id="password"
+          class="fadeIn third"
+          name="login"
+          placeholder="Senha"
+        />
+        <input
+          (click)="navigate()"
+          type="button"
+          class="fadeIn fourth"
+          value="Log In"
+        />
       </form>
 
       <div id="formFooter">
-        <a style="margin-right: 25px;" class="underlineHover" href="esqueci">Esqueci a senha?</a>
+        <a style="margin-right: 25px" class="underlineHover" href="esqueci"
+          >Esqueci a senha?</a
+        >
         <a class="underlineHover" href="cadastro-comprador">Cadastre-se</a>
       </div>
-
     </div>
   </div>
 </body> -->
