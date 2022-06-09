@@ -1,12 +1,12 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
-import { CadastroCompradorComponent } from './cadastro-comprador/cadastro-comprador.component';
-import { FeedCompradorAnunciosComponent } from './feed-comprador-anuncios/feed-comprador-anuncios.component';
-import { LoginComponent } from './login/login.component';
-import { EsqueciComponent } from './esqueci/esqueci.component';
-import { MeuPerfilComponent } from './meu-perfil/meu-perfil.component';
-import { CadastroAnuncioComponent } from './cadastro-anuncio/cadastro-anuncio.component';
+import { CadastroCompradorComponent } from './externo/cadastro/cadastro-comprador.component';
+import { FeedCompradorAnunciosComponent } from './main-page/feed-comprador-anuncios.component';
+import { LoginComponent } from './externo/login/login.component';
+import { EsqueciComponent } from './externo/esqueci-senha/esqueci.component';
+import { MeuPerfilComponent } from './interno/meu-perfil/meu-perfil.component';
+import { CadastroAnuncioComponent } from './interno/cadastro-anuncio/cadastro-anuncio.component';
 
 const app_routes: Routes = [
   { path: 'cadastro-comprador', component: CadastroCompradorComponent },
