@@ -12,8 +12,10 @@ import { MeuPerfilComponent } from './interno/meu-perfil/meu-perfil.component';
 import { CadastroAnuncioComponent } from './interno/cadastro-anuncio/cadastro-anuncio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
-import {MatFormFieldModule} from '@angular/material/form-field';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     routing,
     BrowserAnimationsModule,
     MatCardModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

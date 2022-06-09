@@ -1,24 +1,9 @@
-<mat-card class="center">
-  <mat-card class="center-mat-card shadow">
-    <img class="alinha-img-top" src="assets/128x128-preto.png" />
-    <mat-card-subtitle>Start</mat-card-subtitle>
-    <p>
-      <mat-form-field appearance="outline">
-        <mat-label>Outline form field</mat-label>
-        <input matInput placeholder="Placeholder" />
-        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-        <mat-hint>Hint</mat-hint>
-      </mat-form-field>
-    </p>
-  </mat-card>
-</mat-card>
-
-<!-- <body
+<body
   style="
     background: linear-gradient(
       145deg,
-      #c1bfbf,
-      #9f9f9f,
+      #ebeaea,
+      #e0dfdf,
       transparent
     ) !important;
   "
@@ -26,36 +11,43 @@
   <div class="wrapper fadeInDown">
     <div id="formContent">
       <div class="fadeIn first">
-        <img class="alinha-img-top" src="assets/128x128-preto.png" />
+        <img
+          style="margin-bottom: 11px"
+          class="alinha-img-top"
+          src="assets/128x128-preto.png"
+        />
       </div>
 
-      <form>
-        <i
-          class="fa fa-envelope icon-email fadeIn second"
-          aria-hidden="true"
-        ></i
-        ><input
-          type="text"
-          id="login"
-          class="fadeIn second"
-          name="login"
-          placeholder="Email"
-        />
-        <i class="fa fa-key icon-key fadeIn third" aria-hidden="true"></i
-        ><input
-          type="password"
-          id="password"
-          class="fadeIn third"
-          name="login"
-          placeholder="Senha"
-        />
-        <input
-          (click)="navigate()"
-          type="button"
-          class="fadeIn fourth"
-          value="Log In"
-        />
-      </form>
+      <mat-form-field
+        style="width: 21rem"
+        appearance="outline"
+        class="fadeIn second"
+      >
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email" />
+        <mat-icon style="font-size: 18px" class="primary" matPrefix
+          >alternate_email
+        </mat-icon>
+      </mat-form-field>
+
+      <mat-form-field
+        style="width: 21rem"
+        appearance="outline"
+        class="fadeIn third"
+      >
+        <mat-label>Senha</mat-label>
+        <input matInput placeholder="Email" />
+        <mat-icon style="font-size: 18px" class="primary" matPrefix
+          >key
+        </mat-icon>
+      </mat-form-field>
+
+      <input
+        (click)="navigate()"
+        type="button"
+        class="fadeIn fourth"
+        value="Log In"
+      />
 
       <div id="formFooter">
         <a style="margin-right: 25px" class="underlineHover" href="esqueci"
@@ -65,4 +57,4 @@
       </div>
     </div>
   </div>
-</body> -->
+</body>

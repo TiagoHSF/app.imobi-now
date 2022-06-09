@@ -1,4 +1,4 @@
-
+<!--
 <body style="background: linear-gradient(44deg, #dee0e3, #bd9e93, transparent) !important;">
 <div class="wrapper fadeInDown">
     <div id="formContent">
@@ -16,6 +16,57 @@
         <a class="underlineHover" href="">Voltar ao login</a>
       </div>
 
+    </div>
+  </div>
+</body> -->
+
+<body
+  style="
+    background: linear-gradient(
+      145deg,
+      #ebeaea,
+      #e0dfdf,
+      transparent
+    ) !important;
+  "
+>
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <div class="fadeIn first">
+        <span style="font-family: inherit" class="imobi-title"
+          >ESTÁ PERDIDO?</span
+        >
+      </div>
+
+      <mat-form-field
+        style="width: 21rem"
+        appearance="outline"
+        class="fadeIn second"
+      >
+        <mat-label>Email, CPF/CNPJ da sua conta</mat-label>
+        <input matInput placeholder="Email, CPF/CNPJ da sua conta" />
+        <mat-icon style="font-size: 18px" class="primary" matPrefix
+          >mail
+        </mat-icon>
+      </mat-form-field>
+
+      <input
+        (click)="sentCode('email')"
+        type="button"
+        class="fadeIn fourth"
+        value="Enviar código"
+      />
+
+      <div id="formFooter">
+        <a class="underlineHover" href="">Voltar ao login</a>
+      </div>
+
+      <div id="formFooter">
+        <a style="margin-right: 25px" class="underlineHover" href="esqueci"
+          >Esqueci a senha?</a
+        >
+        <a class="underlineHover" href="cadastro-comprador">Cadastre-se</a>
+      </div>
     </div>
   </div>
 </body>
