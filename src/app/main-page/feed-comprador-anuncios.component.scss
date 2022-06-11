@@ -54,11 +54,37 @@
 
 }
 
+  a {
+    color: #1b4e9d;
+  }
+
 .text-nav-bar{
   font-variant: all-small-caps;
   font-size: 2.5rem;
   font-weight: 600;
   color: #1b4e9d;
+}
+
+a:hover{
+  color: #03132b;
+  text-decoration: none;
+}
+
+.underlineHover:after {
+  display: block;
+  width: 10px;
+  height: 2px;
+  background-color: #56baed;
+  content: "";
+  transition: width 0.2s;
+}
+
+.underlineHover:hover {
+  color: #0d0d0d;
+}
+
+.underlineHover:hover:after {
+  width: 100%;
 }
 
 // .background-nav {
