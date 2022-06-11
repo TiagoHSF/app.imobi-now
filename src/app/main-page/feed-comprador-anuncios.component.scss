@@ -7,6 +7,7 @@
   padding-right: 10px;
   margin-right: 5px;
   width: 100%;
+  opacity: 0.7;
 }
 
 .efeito-vidro {
@@ -26,14 +27,36 @@
 
 .position-toolbar-center-card{
   position: relative;
-  top: 50%;
-  bottom: 94%;
+  bottom: 60%;
+  left: 25%;
   width: 50%;
   height: 30%;
 }
 
+.position-center-text{
+  font-variant: all-small-caps;
+  text-align: center;
+    position: relative;
+    bottom: 75%;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #1b4e9d;
+}
+
+.position-center-text-sub{
+  font-variant: all-small-caps;
+  text-align: center;
+  position: relative;
+  bottom: 72%;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1b4e9d;
+
+}
+
 .text-nav-bar{
-  font-size: 2rem;
+  font-variant: all-small-caps;
+  font-size: 2.5rem;
   font-weight: 600;
   color: #1b4e9d;
 }
