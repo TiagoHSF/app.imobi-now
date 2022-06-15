@@ -16,6 +16,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { FirstStepComponent } from './interno/first-step/first-step.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatSelectModule } from '@angular/material/select';
+import { ComponentsComponent } from './components/components.component';
+import { SelectorComponent } from './components/selector/selector.component';
+import { EstadosComponent } from './components/selector/estados/estados.component';
+import { TipoImovelComponent } from './components/selector/tipo-imovel/tipo-imovel.component';
+import { QuotaComponent } from './components/selector/quota/quota.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +34,12 @@ import { MatButtonModule } from '@angular/material/button';
     EsqueciComponent,
     MeuPerfilComponent,
     CadastroAnuncioComponent,
+    FirstStepComponent,
+    ComponentsComponent,
+    SelectorComponent,
+    EstadosComponent,
+    TipoImovelComponent,
+    QuotaComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +51,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatInputModule,
     MatIconModule,
     MatButtonModule,
+    MatTabsModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -2,10 +2,10 @@
 <mat-card class="efeito-vidro position-toolbar-card">
   <div class="container">
     <div class="row text-nav-bar">
-      <a class="col underlineHover" href="">HOME</a>
-      <a class="col underlineHover" href="">IMÓVEIS</a>
-      <a class="col-4 underlineHover" href="">LANÇAMENTOS</a>
-      <a class="col underlineHover" href="">CONTATO</a>
+      <a class="col" href="">HOME</a>
+      <a class="col" href="">IMÓVEIS</a>
+      <a class="col-4" href="">LANÇAMENTOS</a>
+      <a class="col" href="">CONTATO</a>
     </div>
   </div>
 </mat-card>
@@ -16,7 +16,12 @@
 <mat-card class="efeito-vidro position-toolbar-center-card">
   <div class="container">
     <div class="row text-nav-bar">
-      <div class="col"></div>
+      <div class="col">
+        <h1>FILTRO</h1>
+        <app-tipo-imovel></app-tipo-imovel>
+        <app-quota></app-quota>
+        <app-estados></app-estados>
+      </div>
     </div>
   </div>
 </mat-card>

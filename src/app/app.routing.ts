@@ -7,6 +7,7 @@ import { LoginComponent } from './externo/login/login.component';
 import { EsqueciComponent } from './externo/esqueci-senha/esqueci.component';
 import { MeuPerfilComponent } from './interno/meu-perfil/meu-perfil.component';
 import { CadastroAnuncioComponent } from './interno/cadastro-anuncio/cadastro-anuncio.component';
+import { FirstStepComponent } from './interno/first-step/first-step.component';
 
 const app_routes: Routes = [
   { path: 'cadastro-comprador', component: CadastroCompradorComponent },
@@ -15,6 +16,7 @@ const app_routes: Routes = [
   { path: 'meu-perfil', component: MeuPerfilComponent },
   { path: 'cadastro-anuncio', component: CadastroAnuncioComponent },
   { path: '', component: LoginComponent },
+  { path: 'primeiros-passos', component: FirstStepComponent },
 ];
 
 export const routing: ModuleWithProviders<any> =

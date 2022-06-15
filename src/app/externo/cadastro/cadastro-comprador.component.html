@@ -1,28 +1,95 @@
-<body style="background: linear-gradient(44deg, #dee0e3, #bd9e93, transparent) !important;">
-<div class="wrapper fadeInDown">
+<body
+  style="
+    background: linear-gradient(
+      145deg,
+      #ebeaea,
+      #e0dfdf,
+      transparent
+    ) !important;
+  "
+>
+  <div class="wrapper fadeInDown">
     <div id="formContent">
-
       <div class="fadeIn first">
-        <span class="imobi-title">IMOBI</span>
+        <img
+          style="margin-bottom: 11px"
+          class="alinha-img-top"
+          src="assets/logo-branco-128x128.jpg"
+        />
       </div>
 
       <form>
-          <div class="form-group">
-        <input type="text" id="login" class="fadeIn second" name="login" placeholder="Insira seu usuário">
-        <label for="email"></label>
-        <i class="fa fa-envelope icon-email fadeIn second" aria-hidden="true"></i><input type="text" id="email" name="email" class="fadeIn second" placeholder="Insira seu email"/>
-        <input type="text" id="cpf" class="fadeIn second" name="cpf" placeholder="Insira seu CPF ou CNPJ"/>
-        <input type="text" id="number" class="fadeIn second" name="cpf" placeholder="Insira seu número de telefone"/>
-        <i class="fa fa-key icon-key fadeIn third" aria-hidden="true"></i><input style="margin-top: 25px !important;" type="password" id="password-main" class="fadeIn third" name="login-main" placeholder="Insira uma senha"/>
-        <i class="fa fa-key icon-key2 fadeIn third" aria-hidden="true"></i><input type="password" id="password-confirm" class="fadeIn third" name="password-confirm" placeholder="Confirme a senha digitada"/>
-        <i class="fa fa-floppy-o" aria-hidden="true"></i><input (click)="sentEmail()" type="button" class="fadeIn fourth" value="Cadastrar"/>
+        <div class="form-group">
+          <mat-form-field
+            style="width: 21rem"
+            appearance="outline"
+            class="fadeIn second"
+          >
+            <mat-label>Nome de usuário</mat-label>
+            <input matInput placeholder="Nome de usuário" />
+            <mat-icon style="font-size: 18px" class="primary" matPrefix>
+            </mat-icon>
+          </mat-form-field>
+
+          <mat-form-field
+            style="width: 21rem"
+            appearance="outline"
+            class="fadeIn second"
+          >
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" />
+            <mat-icon style="font-size: 18px" class="primary" matPrefix
+              >mail
+            </mat-icon>
+          </mat-form-field>
+
+          <mat-form-field
+            style="width: 21rem"
+            appearance="outline"
+            class="fadeIn second"
+          >
+            <mat-label>CPF ou CNPJ</mat-label>
+            <input matInput placeholder="CPF ou CNPJ" />
+            <mat-icon style="font-size: 18px" class="primary" matPrefix>
+            </mat-icon>
+          </mat-form-field>
+
+          <mat-form-field
+            style="width: 21rem"
+            appearance="outline"
+            class="fadeIn second"
+          >
+            <mat-label>Senha</mat-label>
+            <input matInput placeholder="Senha" />
+            <mat-icon style="font-size: 18px" class="primary" matPrefix
+              >key
+            </mat-icon>
+          </mat-form-field>
+
+          <mat-form-field
+            style="width: 21rem"
+            appearance="outline"
+            class="fadeIn second"
+          >
+            <mat-label>Repita sua senha</mat-label>
+            <input matInput placeholder="Repita sua senha" />
+            <mat-icon style="font-size: 18px" class="primary" matPrefix
+              >key
+            </mat-icon>
+          </mat-form-field>
+
+          <input
+            (click)="navigate()"
+            type="button"
+            class="fadeIn fourth"
+            value="Cadastrar"
+          />
         </div>
       </form>
 
       <div id="formFooter">
         <a class="underlineHover" href="">Voltar ao login</a>
       </div>
-
     </div>
   </div>
 </body>
