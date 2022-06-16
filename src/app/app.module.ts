@@ -25,6 +25,8 @@ import { EstadosComponent } from './components/selector/estados/estados.componen
 import { TipoImovelComponent } from './components/selector/tipo-imovel/tipo-imovel.component';
 import { QuotaComponent } from './components/selector/quota/quota.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { NovidadesComponent } from './interno/novidades/novidades.component';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     EstadosComponent,
     TipoImovelComponent,
     QuotaComponent,
+    NovidadesComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,6 +57,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatButtonModule,
     MatTabsModule,
     MatSelectModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

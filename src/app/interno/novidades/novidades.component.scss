@@ -1,0 +1,40 @@
+.space {
+  margin-right: 56px;
+}
+
+.card-lancamento {
+  width: 52%;
+  float: right;
+  background: #1b4e9d;
+  color: white;
+  font-weight: 500;
+  height: 3rem;
+}
+
+.foto-imovel {
+  margin-top: -36px;
+  margin-left: 28px;
+  width: 77%;
+}
+
+.text-first {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #1b4e9d;
+  font-weight: 600;
+}
+
+.text-second {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 13px;
+}
+
+.efeito-vidro {
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
