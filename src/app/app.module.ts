@@ -24,6 +24,7 @@ import { SelectorComponent } from './components/selector/selector.component';
 import { EstadosComponent } from './components/selector/estados/estados.component';
 import { TipoImovelComponent } from './components/selector/tipo-imovel/tipo-imovel.component';
 import { QuotaComponent } from './components/selector/quota/quota.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
