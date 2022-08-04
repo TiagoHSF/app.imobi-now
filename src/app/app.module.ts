@@ -27,6 +27,7 @@ import { QuotaComponent } from './components/selector/quota/quota.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { NovidadesComponent } from './interno/novidades/novidades.component';
 import { MatListModule } from '@angular/material/list';
+import { LoginService } from './service/LoginService';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,7 @@ import { MatListModule } from '@angular/material/list';
     MatSelectModule,
     MatListModule,
   ],
-  providers: [],
+  providers: [LoginService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
