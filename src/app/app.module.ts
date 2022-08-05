@@ -29,6 +29,8 @@ import { NovidadesComponent } from './interno/novidades/novidades.component';
 import { MatListModule } from '@angular/material/list';
 import { LoginService } from './service/LoginService';
 import { EmpresaComponent } from './interno/first-step/empresa/empresa.component';
+import { TermosUsoComponent } from './interno/first-step/termos-uso/termos-uso.component';
+import { ConvidarAmigoComponent } from './interno/first-step/convidar-amigo/convidar-amigo.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { EmpresaComponent } from './interno/first-step/empresa/empresa.component
     QuotaComponent,
     NovidadesComponent,
     EmpresaComponent,
+    TermosUsoComponent,
+    ConvidarAmigoComponent,
   ],
   imports: [
     BrowserModule,
