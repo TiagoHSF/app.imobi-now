@@ -32,6 +32,7 @@ import { EmpresaComponent } from './interno/first-step/empresa/empresa.component
 import { TermosUsoComponent } from './interno/first-step/termos-uso/termos-uso.component';
 import { ConvidarAmigoComponent } from './interno/first-step/convidar-amigo/convidar-amigo.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatSelectModule,
     MatListModule,
     MatExpansionModule,
+    MatDividerModule,
   ],
   providers: [LoginService],
   bootstrap: [AppComponent],

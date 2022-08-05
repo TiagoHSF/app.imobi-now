@@ -67,7 +67,7 @@
             >key
           </mat-icon>
         </mat-form-field>
-        <button (click)="this.addEmail()" class="add-email">Email</button>
+        <button (click)="this.addEmail()" class="btn">Email</button>
       </div>
     </div>
 
@@ -88,10 +88,24 @@
             >key
           </mat-icon>
         </mat-form-field>
-        <button (click)="this.addTelefone()" class="add-tel">Tel</button>
+        <button (click)="this.addTelefone()" class="btn">Tel</button>
       </div>
     </div>
+    <mat-divider style="margin-bottom: 11px"></mat-divider>
+  </div>
+</mat-expansion-panel>
 
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title> Redes sociais </mat-panel-title>
+    <mat-panel-description>
+      Cadastre suas redes sociais
+      <mat-icon style="margin-left: 10px; margin-right: 10px">facebook</mat-icon
+      ><mat-icon>whatsapp</mat-icon>
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <div id="formContent">
     <div class="row">
       <div class="col">
         <mat-form-field style="width: 21rem" appearance="outline">
