@@ -28,6 +28,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { NovidadesComponent } from './interno/novidades/novidades.component';
 import { MatListModule } from '@angular/material/list';
 import { LoginService } from './service/LoginService';
+import { EmpresaComponent } from './interno/first-step/empresa/empresa.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { LoginService } from './service/LoginService';
     TipoImovelComponent,
     QuotaComponent,
     NovidadesComponent,
+    EmpresaComponent,
   ],
   imports: [
     BrowserModule,

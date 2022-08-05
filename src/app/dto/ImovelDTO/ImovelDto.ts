@@ -1,4 +1,4 @@
-import { CorretorDTO } from './CorretorDto';
+import { CorretorDTO } from '../UsuarioDTO/CorretorDto';
 import { LocalizacaoImovelDto } from './LocalizacaoImovelDto';
 
 export interface ImovelDto {
