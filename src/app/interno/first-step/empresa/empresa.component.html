@@ -67,29 +67,58 @@
             >key
           </mat-icon>
         </mat-form-field>
-        <button (click)="this.addEmail()">Adicionar Email</button>
+        <button (click)="this.addEmail()" class="add-email">Email</button>
       </div>
-      <!-- <div class="col">
-        <mat-form-field style="width: 21rem" appearance="outline">
-          <mat-label>CNPJ</mat-label>
-          <input matInput placeholder="Email" />
-        </mat-form-field>
-      </div> -->
     </div>
 
-    <!-- <div class="row">
+    <div class="row">
       <div class="col">
-        <mat-form-field style="width: 80%" appearance="outline">
-          <mat-label>Nome fantasia</mat-label>
-          <input matInput placeholder="Email" />
+        <mat-form-field
+          *ngFor="let item of qtdTelefones"
+          style="width: 21rem"
+          appearance="outline"
+        >
+          <mat-label>Telefones de contato</mat-label>
+          <input matInput placeholder="Telefone" />
+          <mat-icon
+            (click)="this.removerEmail(item)"
+            style="font-size: 18px"
+            class="primary"
+            matPrefix
+            >key
+          </mat-icon>
+        </mat-form-field>
+        <button (click)="this.addTelefone()" class="add-tel">Tel</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <mat-form-field style="width: 21rem" appearance="outline">
+          <mat-label>Instagram</mat-label>
+          <input matInput placeholder="Instagram" />
+          <mat-icon style="font-size: 18px" class="primary" matPrefix>
+          </mat-icon>
         </mat-form-field>
       </div>
       <div class="col">
         <mat-form-field style="width: 21rem" appearance="outline">
-          <mat-label>Quantidade funcionários</mat-label>
-          <input matInput placeholder="Email" />
+          <mat-label>Facebook</mat-label>
+          <input matInput placeholder="Instagram" />
+          <mat-icon style="font-size: 18px" class="primary" matPrefix
+            >facebook
+          </mat-icon>
         </mat-form-field>
       </div>
-    </div> -->
+      <div class="col">
+        <mat-form-field style="width: 21rem" appearance="outline">
+          <mat-label>WhatsApp</mat-label>
+          <input matInput placeholder="Instagram" />
+          <mat-icon style="font-size: 18px" class="primary" matPrefix
+            >whatsapp
+          </mat-icon>
+        </mat-form-field>
+      </div>
+    </div>
   </div>
 </mat-expansion-panel>

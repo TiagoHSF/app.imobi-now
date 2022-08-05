@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpresaComponent implements OnInit {
   public qtdEmails: Number[] = [0];
+  public qtdTelefones: Number[] = [0];
 
   constructor() {}
 
@@ -19,6 +20,15 @@ export class EmpresaComponent implements OnInit {
       this.qtdEmails.push(this.qtdEmails.length + 1);
     }
   }
+
+  addTelefone() {
+    if (this.qtdTelefones.length === 3) {
+      return;
+    } else {
+      this.qtdTelefones.push(this.qtdTelefones.length + 1);
+    }
+  }
+
 
   removerEmail(index: any) {}
 }
