@@ -1,1 +1,95 @@
-<div></div>
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title> Informações da empresa </mat-panel-title>
+    <mat-panel-description>
+      Insira as informações da empresa
+      <mat-icon>account_circle</mat-icon>
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <div id="formContent">
+    <div class="row">
+      <div class="col">
+        <mat-form-field style="width: 80%" appearance="outline">
+          <mat-label>Razao Social da empresa</mat-label>
+          <input matInput placeholder="Email" />
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-form-field style="width: 21rem" appearance="outline">
+          <mat-label>CNPJ</mat-label>
+          <input matInput placeholder="Email" />
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <mat-form-field style="width: 80%" appearance="outline">
+          <mat-label>Nome fantasia</mat-label>
+          <input matInput placeholder="Email" />
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-form-field style="width: 21rem" appearance="outline">
+          <mat-label>Quantidade funcionários</mat-label>
+          <input matInput placeholder="Email" />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+</mat-expansion-panel>
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title> Contatos da empresa </mat-panel-title>
+    <mat-panel-description>
+      Insira as informações de contato da sua empresa
+      <mat-icon>account_circle</mat-icon>
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <div id="formContent">
+    <div class="row">
+      <div class="col">
+        <mat-form-field
+          *ngFor="let item of qtdEmails"
+          style="width: 21rem"
+          appearance="outline"
+        >
+          <mat-label>Emails de contato</mat-label>
+          <input matInput placeholder="Email" />
+          <mat-icon
+            (click)="this.removerEmail(item)"
+            style="font-size: 18px"
+            class="primary"
+            matPrefix
+            >key
+          </mat-icon>
+        </mat-form-field>
+        <button (click)="this.addEmail()">Adicionar Email</button>
+      </div>
+      <!-- <div class="col">
+        <mat-form-field style="width: 21rem" appearance="outline">
+          <mat-label>CNPJ</mat-label>
+          <input matInput placeholder="Email" />
+        </mat-form-field>
+      </div> -->
+    </div>
+
+    <!-- <div class="row">
+      <div class="col">
+        <mat-form-field style="width: 80%" appearance="outline">
+          <mat-label>Nome fantasia</mat-label>
+          <input matInput placeholder="Email" />
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-form-field style="width: 21rem" appearance="outline">
+          <mat-label>Quantidade funcionários</mat-label>
+          <input matInput placeholder="Email" />
+        </mat-form-field>
+      </div>
+    </div> -->
+  </div>
+</mat-expansion-panel>
