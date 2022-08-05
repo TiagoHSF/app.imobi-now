@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
         if (sim.value) {
           this.loginService.setTipoCadastro(true);
         } else {
-          this.loginService.setTipoCadastro(true);
+          this.loginService.setTipoCadastro(false);
         }
       })
       .then(() => {

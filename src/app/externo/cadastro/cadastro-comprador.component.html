@@ -44,11 +44,36 @@
           </mat-form-field>
 
           <mat-form-field
+            *ngIf="this.ehComprador"
             style="width: 21rem"
             appearance="outline"
             class="fadeIn second"
           >
             <mat-label>CPF ou CNPJ</mat-label>
+            <input matInput placeholder="CPF ou CNPJ" />
+            <mat-icon style="font-size: 18px" class="primary" matPrefix>
+            </mat-icon>
+          </mat-form-field>
+
+          <mat-form-field
+            *ngIf="!this.ehComprador"
+            style="width: 21rem"
+            appearance="outline"
+            class="fadeIn second"
+          >
+            <mat-label>CNPJ</mat-label>
+            <input matInput placeholder="CNPJ" />
+            <mat-icon style="font-size: 18px" class="primary" matPrefix>
+            </mat-icon>
+          </mat-form-field>
+
+          <mat-form-field
+            *ngIf="!this.ehComprador"
+            style="width: 21rem"
+            appearance="outline"
+            class="fadeIn second"
+          >
+            <mat-label>RAZÃO SOCIAL</mat-label>
             <input matInput placeholder="CPF ou CNPJ" />
             <mat-icon style="font-size: 18px" class="primary" matPrefix>
             </mat-icon>
